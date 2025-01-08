@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Layout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;       /* Stack rows vertically */
+            align-items: center;          /* Center rows horizontally */
+            min-height: 100vh;            /* Full viewport height */
+            margin: 0;                    /* Remove default margin */
+            background-color: #f0f0f0;    /* Optional background color */
+        }
+        .row {
+            display: flex;
+            justify-content: space-around; /* Space videos equally within the row */
+            width: 100%;                  /* Make row take up full width */
+            margin-bottom: 20px;          /* Add spacing between rows */
+        }
+        video {
+            width: 30%;                   /* Make all videos the same width */
+            height: auto;                 /* Maintain aspect ratio */
+            border: 2px solid #ccc;       /* Optional border for styling */
+            border-radius: 10px;          /* Optional rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <video autoplay muted loop src="vids/vid-2.mp4"></video>
+        <video autoplay muted loop src="vids/vid-1.mp4"></video>
+        <video autoplay muted loop src="vids/vid-3.mp4"></video>
+    </div>
+    <div class="row">
+        <video autoplay muted loop src="vids/vid-4.mp4"></video>
+    </div>
+</body>
+</html>
