@@ -237,6 +237,10 @@ nav {
   gap: 2rem;
 }
 
+.service__card:nth-child(4) {
+  grid-column: 2;
+}
+
 .service__card {
   text-align: center;
 }
@@ -266,6 +270,8 @@ nav {
   color: var(--extra-light);
   line-height: 1.75rem;
 }
+
+
 
 .client__container {
   padding-bottom: 2rem;
